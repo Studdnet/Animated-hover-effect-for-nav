@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open-sans", sans-serif;
+  background: #2c3e50;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  position: relative;
+  width: 590px;
+  height: 50px;
+  background: #34495e;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  font-size: 0px;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav .animation {
+  position: absolute;
+  z-index: 0;
+  background: #1abc9c;
+  width: 100px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+nav .animation__1 {
+  height: 100%;
+  top: 0;
+}
+
+nav .animation__2 {
+  height: 2px;
+  bottom: 0;
+}
+
+nav .animation__3 {
+  height: 2px;
+  top: 0;
+}
+
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+nav a:nth-child(1) {
+  width: 100px;
+}
+
+nav a:nth-child(2) {
+  width: 110px;
+}
+
+nav a:nth-child(3) {
+  width: 100px;
+}
+
+nav a:nth-child(4) {
+  width: 160px;
+}
+
+nav a:nth-child(5) {
+  width: 120px;
+}
+
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+
+nav .start-about,
+a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+}
+
+nav .start-blog,
+a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+}
+
+nav .start-blog,
+a:nth-child(4):hover ~ .animation {
+  width: 160px;
+  left: 310px;
+}
+
+nav .start-blog,
+a:nth-child(5):hover ~ .animation {
+  width: 120px;
+  left: 470px;
+}
